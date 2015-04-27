@@ -26,7 +26,7 @@ describe('Triangle#type') do
 
   it('return invalid if the type is not valid') do
     test_triangle = Triangle.new(3,7,3)
-    expect(test_triangle.type()).to(eq("invalid"))
+    expect(test_triangle.type()).to(eq("NOT a triangle"))
   end
 
 end
