@@ -16,7 +16,9 @@ class Triangle
   end
 
   define_method(:type) do
-    
+    if @sides[0] == @sides[1] && @sides[1] == @sides[2]
+      return "equilateral"
+    end
   end
 
 end

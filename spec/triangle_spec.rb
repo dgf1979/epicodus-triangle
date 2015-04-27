@@ -12,5 +12,9 @@ describe('Triangle#is_valid?') do
     test_triangle = Triangle.new(3,3,3)
     expect(test_triangle.type()).to(eq("equilateral"))
   end
-  
+
+  it('return isosceles if only two sides are equal') do
+    test_triangle = Triangle.new(3,3,2)
+    expect(test_triangle.type()).to(eq("isosceles"))
+  end
 end
