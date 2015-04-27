@@ -4,7 +4,8 @@ require('triangle')
 describe('Triangle#is_valid?') do
 
   it('determine if triangle is possible/valid') do
-    expect(Triangle.new(3,3,7)).to(eq(false))
+    test_triangle = Triangle.new(3,3,7)
+    expect(test_triangle.is_valid?()).to(eq(false))    
   end
 
 end
