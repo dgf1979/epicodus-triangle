@@ -1,15 +1,11 @@
 class Triangle
 
   define_method(:initialize) do |side_a, side_b, side_c|
-    @sides = []
-    @sides.push(side_a)
-    @sides.push(side_b)
-    @sides.push(side_c)
-    @sides.sort!()
+    @sides = [side_a.to_i(), side_b.to_i(), side_c.to_i()].sort()
   end
 
   define_method(:is_valid?) do
-    if @sides.at(0) + @sides.at(1) >= @sides.at(2)
+    if @sides[0] + @sides[1] > @sides[2]
       true
     else
       false
@@ -17,6 +13,7 @@ class Triangle
   end
 
   define_method(:type) do
+
     if self.is_valid?() == true
       if @sides[0] == @sides[1] && @sides[1] == @sides[2]
         return "equilateral"
