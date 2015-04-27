@@ -20,6 +20,8 @@ class Triangle
       return "equilateral"
     elsif @sides[0] == @sides[1] || @sides[1] == @sides[2]
       return "isosceles"
+    else
+      return "scalene"
     end
   end
 
