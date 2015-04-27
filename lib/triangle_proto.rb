@@ -13,6 +13,21 @@ class Triangle
     end
   end
 
+  #determine type of triangle
+  define_method(:type) do
+    if self.is_valid_triangle?()
+      #determine what valid triangle type and return
+      if @sides[0] == @sides[1] && @sides[1] == @sides[2]
+        return "equilateral"
+      elsif @sides[0] == @sides[1] || @sides[1] == @sides[2]
+        return "isoceles"
+      else
+        return "scalene"
+      end
+    else
+      return "invalid"
+    end
 
+  end
 
 end
