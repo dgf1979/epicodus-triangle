@@ -1,10 +1,10 @@
 require('rspec')
 require('triangle')
 
-describe('') do
+describe('Triangle#is_valid?') do
 
-  it('') do
-    expect().to(eq())
+  it('determine if triangle is possible/valid') do
+    expect(Triangle.new(3,3,7)).to(eq(false))
   end
 
 end
