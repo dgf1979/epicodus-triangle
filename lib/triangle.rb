@@ -18,6 +18,8 @@ class Triangle
   define_method(:type) do
     if @sides[0] == @sides[1] && @sides[1] == @sides[2]
       return "equilateral"
+    elsif @sides[0] != @sides[1] || @sides[1] != @sides[2]
+      return "isosceles"
     end
   end
 
