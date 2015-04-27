@@ -15,4 +15,8 @@ class Triangle
     end
   end
 
+  define_method(:type) do
+    
+  end
+
 end
